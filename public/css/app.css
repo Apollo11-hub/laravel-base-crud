@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.activeBar {
+  position: absolute;
+  top: 72px;
+  left: 0px;
+  z-index: 99;
+  width: 100%;
+  height: 8px;
+  background-color: #0282f9;
+}
+
+.activeItem {
+  color: #0282f9;
+}
+
+#footer-list-title {
+  margin-bottom: 15px;
+  font-size: 25px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+}
+
+#footer-third-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0282f9;
+  margin-right: 30px;
+}
+
+header {
+  background-color: white;
+  margin: 20px 0;
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+}
+
+header div nav {
+  display: flex;
+  align-items: center;
+}
+
+header div nav li {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+}
+
+header div nav li a {
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  color: #474746;
+  margin: 0 15px;
+}
+
+header div nav li a:hover {
+  color: #0282f9;
+  cursor: pointer;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0282f9;
+  padding: 60px 0;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+footer nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer nav ul li img {
+  width: 50px;
+}
+
+footer nav ul li span {
+  margin-left: 20px;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: white;
+}
+
+footer .primo-footer {
+  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+}
+
+footer .primo-footer div:first-child {
+  display: flex;
+  height: 480px;
+}
+
+footer .primo-footer div:first-child div:first-child {
+  flex-flow: column wrap;
+  width: 50%;
+  height: 100%;
+  padding: 40px 0;
+  color: white;
+}
+
+footer .primo-footer div:first-child div:first-child ul {
+  margin-bottom: 20px;
+}
+
+footer .primo-footer div:first-child div:first-child ul li {
+  margin-bottom: 10px;
+  font-size: 17px;
+  text-transform: capitalize;
+  color: #b6b6b6;
+}
+
+footer .primo-footer div:first-child div:first-child ul li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+footer .primo-footer div:first-child div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  overflow: hidden;
+}
+
+footer .primo-footer div:first-child div:last-child img {
+  width: 105%;
+}
+
+footer .secondo-footer {
+  background-color: #303030;
+}
+
+footer .secondo-footer div {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+footer .secondo-footer div button {
+  padding: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  background-color: #303030;
+  border: 1px solid #0282f9;
+}
+
+footer .secondo-footer div button:hover {
+  background-color: #4a4a4a;
+  cursor: pointer;
+}
+
+footer .secondo-footer div button:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+footer .secondo-footer div ul {
+  display: flex;
+}
+
+footer .secondo-footer div ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  font-size: 20px;
+  color: rgb(133, 132, 132);
+}
+
+main {
+  background-color: #1c1c1c;
+}
+
+main .container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+
+main .current-series-special-div {
+  position: absolute;
+  top: 510px;
+  left: 300px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 13px 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  background-color: #0282f9;
+}
+
+main .jumbo {
+  height: 400px;
+  width: 100%;
+  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  background-size: auto;
+}
+
+main .card-o {
+  width: 200px;
+  margin: 20px 20px 30px 0;
+}
+
+main .card-o:hover {
+  cursor: pointer;
+}
+
+main .card-o .image-container {
+  height: 60%;
+  overflow: hidden;
+}
+
+main .card-o .image-container img {
+  width: 100%;
+}
+
+main p {
+  width: 200px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+main p:hover {
+  color: #0282f9;
+  cursor: pointer;
+}
+

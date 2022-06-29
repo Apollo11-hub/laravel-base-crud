@@ -1,0 +1,27 @@
+header{
+    background-color: white;
+    margin:20px 0;
+    div{
+      display: flex;
+      justify-content: space-between;
+      nav{
+        display: flex;
+        align-items: center;
+        li{
+          position: relative;
+          top: 0;
+          left: 0;
+          display: inline-block;
+          a{
+            @include headeNavText();
+            margin: 0 15px;
+            &:hover{
+            color:$principal-color;
+            cursor: pointer;
+            }
+          }
+        }
+      }
+
+    }
+  }

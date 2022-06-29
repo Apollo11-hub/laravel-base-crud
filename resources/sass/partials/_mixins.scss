@@ -1,0 +1,12 @@
+@mixin headeNavText() {
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  color: #474746;
+}
+
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

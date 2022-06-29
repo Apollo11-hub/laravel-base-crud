@@ -1,0 +1,96 @@
+footer{
+    nav{
+        @include center();
+        background-color: $principal-color;
+        padding: 60px 0;
+        ul{
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+          li{
+            @include center();
+            img{
+              width: 50px;
+            }
+            span{
+              margin-left: 20px;
+              font-size: 17px;
+              text-transform: uppercase;
+              color: white;
+            }
+          }
+        }
+      }
+      .primo-footer{
+         background-image: url("../../../public/img/footer-bg.jpg");
+        div:first-child{
+          display: flex;
+          height: 480px;
+          div:first-child{
+            flex-flow: column wrap ;
+            width: 50%;
+            height: 100%;
+            padding: 40px 0;
+            color: white;
+            ul{
+              margin-bottom: 20px;
+              li{
+                margin-bottom: 10px;
+                font-size: 17px;
+                text-transform: capitalize;
+                color:#b6b6b6 ;
+                &:hover{
+                  color: white;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+          div:last-child{
+            @include center();
+            width:50%;
+            overflow: hidden;
+            img{
+              width: 105%;
+            }
+          }
+        }
+      }
+      .secondo-footer{
+        background-color:#303030;
+        div{
+          display: flex;
+          justify-content: space-between;
+          padding: 20px 0;
+          button{
+            padding: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: white;
+            background-color: #303030;
+            border: 1px solid $principal-color;
+            &:hover{
+              background-color: lighten($color: #303030, $amount: 10);
+              cursor: pointer;
+            }
+            &:active{
+              transform: scale(0.98);
+
+                box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+
+
+            }
+          }
+          ul{
+            display: flex;
+            li{
+              @include center();
+              margin-right: 20px;
+              font-size: 20px;
+              color: rgb(133, 132, 132);
+            }
+          }
+        }
+      }
+}
+

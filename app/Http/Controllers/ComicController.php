@@ -39,6 +39,21 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
+
+        $request->validate([
+            'title'=> 'required|max:50|min:5',
+            'type' => 'required|max:50|min:4',
+        ],
+        [
+            'title.required' => 'il campo Nome è obbligatorio',
+            'title.max' => 'Coglione max 50 lettere',
+            'title.min' => 'Coglione più di 5 lettere',
+            'type.required' => 'il campo Tipo è obbligatorio',
+            'type.max' => 'Coglione max 50 lettere',
+            'type.min' => 'Coglione più di 4 lettere',
+        ]
+
+    );
         $data = $request->all();
 
         $new_comic= new Comic();
@@ -88,6 +103,20 @@ class ComicController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $request->validate([
+            'title'=> 'required|max:50|min:5',
+            'type' => 'required|max:50|min:4',
+        ],
+        [
+            'title.required' => 'il campo Nome è obbligatorio',
+            'title.max' => 'Coglione max 50 lettere',
+            'title.min' => 'Coglione più di 5 lettere',
+            'type.required' => 'il campo Tipo è obbligatorio',
+            'type.max' => 'Coglione max 50 lettere',
+            'type.min' => 'Coglione più di 4 lettere',
+        ]
+        );
+
         $comic = Comic::find($id);
         $data = $request->all();
         // $comic->title = $data['title'];

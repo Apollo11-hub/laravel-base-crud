@@ -24,7 +24,7 @@
     @error('title')
         is-invalid
     @enderror"
-    class="form-control form-control-lg" type="text" value="{{old("title" , $comic->title)}}" id="title" name="title" placeholder="Titolo Comic">
+    class="form-control form-control-lg  @error('title') is-invalid @enderror" type="text" value="{{old("title" , $comic->title)}}" id="title" name="title" placeholder="Titolo Comic">
     @error('title')
         <p>{{$message}}</p>
     @enderror
@@ -33,7 +33,7 @@
 <div class="mb-3">
     <label for="image" class="form-label">Immagine Url Comic</label>
     {{-- il name dell'input deve corrispondere al nome della colonna della tabella di riferimento --}}
-    <input  class="form-control form-control-lg" type="text" value="{{$comic->image}}" id="image" name="image" placeholder="Immagine Url Comic">
+    <input  class="form-control form-control-lg " type="text" value="{{$comic->image}}" id="image" name="image" placeholder="Immagine Url Comic">
 </div>
 
 <div class="mb-3">
@@ -43,7 +43,7 @@
     @error('type')
         is-invalid
     @enderror"
-    class="form-control form-control-lg" value="{{old("type" , $comic->type)}} type="text" id="type" name="type" placeholder="Tipo di Comic">
+    class="form-control form-control-lg  @error('type') is-invalid @enderror" value="{{old("type" , $comic->type)}}" type="text" id="type" name="type" placeholder="Tipo di Comic">
     @error('type')
         <p>{{$message}}</p>
     @enderror
